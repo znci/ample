@@ -1,0 +1,7 @@
+VERSION="v1.0.0"
+NAME="ample"
+DESCRIPTION="Plenty of tools for znci's projects."
+
+PROJECT_LEAD="zNotChill"
+CONTRIBUTORS=["zNotChill"]
+INTERNAL_VERSION=1
