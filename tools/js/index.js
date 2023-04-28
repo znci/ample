@@ -38,3 +38,26 @@ function randomStr(length) {
   }
   return str;
 }
+
+/**
+ * Adds multiple listeners to multiple events.
+ * @param {String} el 
+ * @param {Object} events 
+ * @param {Function} func 
+ */
+function multiListener(el, events, func) {
+	if(!typeof events === "object") throw new Error("Invalid events");
+	if(!typeof func === "function") throw new Error("Invalid function");
+
+	events.forEach((v) => {
+		el.addEventListener(v, func);
+	})
+}
+
+/**
+ * Function to fix compatibility on mobile.
+ * Relies on multiListener().
+ */
+function compListener(el, func) {
+	multiListener(el, ["click", "touchmove", "touchend"], func);
+}
