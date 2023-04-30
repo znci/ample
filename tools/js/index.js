@@ -2,6 +2,7 @@
 /*
   Ample - Plenty of tools for znci's projects.
   Copyright (c) 2021-2023 znci. All rights reserved.
+  v0.0.1-beta
 */
 
 /**
